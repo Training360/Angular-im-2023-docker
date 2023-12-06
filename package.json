@@ -1,0 +1,14 @@
+{
+  "name": "tables",
+  "version": "0.0.0",
+  "scripts": {
+    "build:server": "cd ./frontend/server && npm i",
+    "build:client": "cd ./frontend && npm i && npm run build",
+    "build": "npm run build:client && npm run build:server",
+    "compose": "npm run build && docker-compose up -d --build",
+    "express": "node ./frontend/server/bin/www"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {}
+}
