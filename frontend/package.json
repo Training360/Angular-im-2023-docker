@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "server": "json-server ./server/db.json --host 0.0.0.0 --watch",
+    "analyze": "webpack-bundle-analyzer dist/tables/stats.json",
     "dev": "concurrently --kill-others \"npm run server\" \"npm run start\"",
     "prod": "concurrently --kill-others \"npm run server\" \"npm run express\"",
     "express": "node ./server/bin/www"
